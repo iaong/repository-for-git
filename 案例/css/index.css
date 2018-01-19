@@ -1,0 +1,197 @@
+body{
+    width:100%;
+    overflow:hidden;
+}
+.hide{ display:none;}
+.show{ display:block;}
+.page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    font-size:16px;
+    color:#FFFFFF;
+    text-align:center;
+    background:center center no-repeat ;
+    background-size:cover;
+}
+.page .wrap{
+    height:500px;
+}
+.page-img100-top{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.page-img100-W {
+    width: 120%;
+    height: auto;
+    position: absolute;
+    left: -10%;
+    top: 5%;
+}
+.page-img100-bottom{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.page-img100{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.page-updown{
+    height:auto;width:25px;
+    position:absolute;
+    left:50%;
+    top:93%;
+    margin-left:-12px;
+}
+.page-current{
+    z-index:1;
+}
+#textsuper{position:absolute;top:-1000;left:-1000;overflow-x:hidden;overflow-y:hidden;z-index:4000}
+#textsub{color:black;position:relative;font-size:21pt;text-align:left;line-height:40pt;top:2000px}
+.circle{
+    position:absolute;
+    left:50%;
+    top:50%;
+    /*background:red;*/
+    width: 50px;
+    height: 50px;
+}
+
+.pt-page-hand2 {
+    -webkit-animation: hand2 2s linear both infinite;
+    animation: hand2 2s linear both infinite;
+}
+@-webkit-keyframes hand2 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.pt-page-yRotate {
+    -webkit-backface-visibility: visible!important;
+    -ms-backface-visibility: visible!important;
+    backface-visibility: visible!important;
+    -webkit-animation: yRotate 1s linear both;
+    animation: yRotate 1s linear both;
+    -webkit-transform-origin:50% 22.616%;
+    transform-origin:50% 22.616%;
+}
+@-webkit-keyframes yRotate {
+    0% {
+        -webkit-transform:  rotateY(90deg);
+        transform:  rotateY(90deg);
+        opacity: 0
+    }
+
+
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform:  rotateY(0);
+        opacity: 1
+    }
+}
+
+.pt-page-pageFadeOut {
+    -webkit-animation: pageFadeOut  1.5s ease both;
+    animation: pageFadeOut  1.5s ease both;
+}
+.pt-page-pageFadeOut2 {
+    -webkit-animation: pageFadeOut  .1s linear both;
+    animation: pageFadeOut  .1s linear both;
+}
+@-webkit-keyframes pageFadeOut  {
+    0% {
+        opacity: 1;	
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.pt-page-pageFadeIn {
+    -webkit-animation: pageFadeIn  2s linear both;
+    animation: pageFadeIn  2s linear both;
+}
+@-webkit-keyframes pageFadeIn  {
+    0% {
+        opacity: 0;	
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.pt-page-door {
+   
+
+	-webkit-backface-visibility: visible!important;
+	-ms-backface-visibility: visible!important;
+	backface-visibility: visible!important;
+	-webkit-animation: door 2s linear both;
+	animation: door 2s linear both;
+}
+@-webkit-keyframes door  {
+	0% {
+		-webkit-transform: rotateY(0);
+		transform: rotateY(0);
+	
+	}
+        
+ 50% {
+		-webkit-transform: perspective(600px) rotateY(-20deg);
+		transform: perspective(600px) rotateY(-20deg);
+               -webkit-transform-origin: 80% 60%;
+                transform-origin: 80% 60%;
+		
+	}
+
+	100% {
+		-webkit-transform: perspective(600px) rotateY(-60deg);
+		transform: perspective(600px) rotateY(-60deg);
+               -webkit-transform-origin: 80% 60%;
+                transform-origin: 80% 60%;
+		
+	}
+}
+@keyframes door  {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    
+    }
+        
+ 50% {
+        -webkit-transform: perspective(600px) rotateY(-20deg);
+        transform: perspective(600px) rotateY(-20deg);
+               -webkit-transform-origin: 80% 60%;
+                transform-origin: 80% 60%;
+        
+    }
+
+    100% {
+        -webkit-transform: perspective(600px) rotateY(-60deg);
+        transform: perspective(600px) rotateY(-60deg);
+               -webkit-transform-origin: 80% 60%;
+                transform-origin: 80% 60%;
+        
+    }
+}

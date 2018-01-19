@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta http-equiv="Content-Type">
+        <meta content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <title>一个这样的家 诗和远方都有了</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="email=no">        
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/animations.css?v=1" />
+        <link rel="stylesheet" type="text/css" href="css/load.css" />
+    </head>
+    <body>
+        <div id="loading">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+
+        <div id="content" class="hide ">
+            <div id="page1" class="pt-page-pageFadeIn">
+                <audio id="musicBg" loop preload="auto" style="display:none;"><source src="images/bg.mp3" type="audio/mpeg"></audio>
+
+                <div class="wrap " style="">
+                    <img class="page-img100" src="images/01.jpg" />
+                    <img class="page-img100 pt-page-yRotate pt-page-delay3000" src="images/101.png" />
+                    <img class="page-img100 pt-page-fadein4 pt-page-delay4500" src="images/102.png" />
+                    <img class="page-img100 pt-page-moveToRight pt-page-delay500" src="images/103.png" />
+                    <img  class="page-img100 pt-page-fadeinInfinite pt-page-delay5500" src="images/handc.png" >
+                    <div id="hand1" style=" position:absolute;top: 50%;left: 60%;height: 25%;width: 35%; -webkit-tap-highlight-color:rgba(0,0,0,0);"  ></div>  
+                </div>
+            </div>
+
+            <div id="page2" class="pt-page-pageFadeIn hide">
+
+               <div class="wrap" style="">
+                    <img class="page-img100" src="images/02.jpg" />
+                    <img id="doortxt1" class="page-img100 pt-page-yRotate pt-page-delay2500 hide" src="images/201.png" />
+                    <img id="doortxt2" class="page-img100 pt-page-fadein4 pt-page-delay4000 hide" src="images/202.png" />
+                    <img id="door" class="page-img100 pt-page-delay500" src="images/203.png" />
+                    <img id="hand2a" class="page-img100 pt-page-fadeinInfinite pt-page-delay500" src="images/hand2.png" />
+                    <div id="hand2" style="height: 30%;width:30%;top: 60%;left: 10%; position:absolute; -webkit-tap-highlight-color:rgba(0,0,0,0);"></div>
+                </div>
+            </div>
+
+            <div id="page3" class="pt-page-pageFadeIn hide">
+
+                <div class="wrap" style="">
+                    <img class="page-img100" src="images/03.jpg" />
+                    <img class="page-img100 pt-page-yRotate pt-page-delay2000" src="images/301.png" />
+                    <img id="darkfloor" class="page-img100 " src="images/303.png" />
+                    <img id="darkfloortext" class="page-img100 pt-page-fadein4 pt-page-delay1500 hide" src="images/304.png" />
+                    <img id="hand3a" class="page-img100 pt-page-fadeinInfinite pt-page-delay3000" src="images/302.png" />
+                    <div id="hand3" style="position:absolute;top: 0%;left: 50%;height: 30%;width:40%; -webkit-tap-highlight-color:rgba(0,0,0,0);"  ></div>
+
+                </div>
+            </div>
+            <div id="page4" class="pt-page-pageFadeIn hide">
+                <div class="wrap" style="">
+                    <img class="page-img100" src="images/05.gif" />
+                    <img class="page-img100 pt-page-moveFromRight pt-page-delay500" src="images/501.png" />
+                    <img class="page-img100 pt-page-yRotate pt-page-delay1000" src="images/502.png" />
+                    <img class="page-img100 pt-page-fadein4 pt-page-delay2500" src="images/503.png" />
+                    <img class="page-img100 pt-page-fadeinInfinite pt-page-delay200" src="images/504.png" />
+
+                    <img class="page-img100 pt-page-moveHandUp pt-page-delay3000" src="images/hand.png" />
+                    <div  id="hand4" style="width:100%;height: 100%;top: 0%;left:0%; position:absolute; -webkit-tap-highlight-color:rgba(0,0,0,0);" ></div>
+                </div>
+            </div>
+            <div id="page5" class="pt-page-pageFadeIn hide">
+                <div class="wrap" style="">
+                    <img class="page-img100" src="images/06.jpg" />
+                    <img id="zi4" class="page-img100 pt-page-scaleUp pt-page-delay1000" src="images/601.png" />
+                    <img id="text5" class="page-img100" src="images/604.png" />
+                </div>
+            </div>
+        </div>
+        <div id="bgmusic0" style="display:none;">
+            <a onClick="onoffMusic()" style="position:fixed; right:10px; top:15px; z-index:8888;">
+                <div id="musicon" style="display:none;"></div>
+                <div id="musicoff" style="display:block;"></div>
+            </a>
+        </div>
+        <audio id="musicBg1"  preload="auto" style="display:none;"><source src="images/bg1.mp3" type="audio/mpeg"></audio>
+        <audio id="musicBg2"  preload="auto" style="display:none;"><source src="images/bg2.mp3" type="audio/mpeg"></audio>
+        <audio id="musicBg3"  preload="auto" style="display:none;"><source src="images/bg3.mp3" type="audio/mpeg"></audio>
+        <audio id="musicBg4"  preload="auto" style="display:none;"><source src="images/bg4.mp3" type="audio/mpeg"></audio>
+        <audio id="musicBg5"  style="display:none;"><source src="images/bg5.mp3" type="audio/mpeg"></audio>
+
+        <script type="text/javascript">
+            var pagecount = 4,isopen = false;
+        </script>
+        <script src="js/zepto.min.js"></script>
+        <script src="js/touch.js"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript">
+            var W = window.innerWidth, H = window.innerHeight;
+            document.onreadystatechange = loading;
+            var musicPlay = document.getElementById('musicBg1');
+            var musicPlay0 = document.getElementById('musicBg');
+            function loading() {
+                if (document.readyState == "complete")
+                {
+                    $("#loading").hide();
+                    $("#content").show();
+                    // $("#bgmusic0").show();
+                    onoffMusic();
+                    musicPlay0.play();
+                    musicPlay.play();
+                    $("#hand1").click(function () {
+                        $("#page1").removeClass("pt-page-pageFadeIn");
+                        $("#page1").addClass("pt-page-pageFadeOut");   
+                            musicPlay.pause();
+                            $("#page2").removeClass("hide");
+                        setTimeout(function () {
+                            $("#page1").addClass("hide");
+                        }, 2000);
+                    });
+
+                    $("#hand2").click(function () {
+
+                            musicPlay.pause();
+                            musicPlay = document.getElementById('musicBg2');
+                            musicPlay.play();
+                        $("#door").attr('src','./images/204.png');
+                        $("#door").addClass("pt-page-door");
+                        $("#hand2a").addClass("hide");
+                        $("#doortxt1").removeClass("hide");
+                        $("#doortxt2").removeClass("hide");
+                        setTimeout(function () {
+                        $("#page2").removeClass("pt-page-pageFadeIn");
+                        $("#page2").addClass("pt-page-pageFadeOut");
+                            $("#page3").removeClass("hide");
+                            musicPlay0.play();
+                        }, 8000);
+                    });
+
+                    $("#hand3").click(function () {
+                            musicPlay = document.getElementById('musicBg4');
+                        $("#darkfloor").addClass("pt-page-pageFadeOut2 pt-page-delay500");
+                        $("#darkfloortext").removeClass("hide");
+                        $("#hand3a").addClass("hide");
+                        $("#hand2").removeClass("hide");
+                        setTimeout(function () {
+                            $("#page3").removeClass("pt-page-pageFadeIn");
+                            $("#page3").addClass("pt-page-pageFadeOut");
+                            $("#page4").removeClass("hide");
+                        }, 4500);
+                    });
+
+                    $("#hand4").click(function () {
+                        $("#page4").removeClass("pt-page-pageFadeIn");
+                        $("#page4").addClass("pt-page-pageFadeOut");
+                        $("#page5").removeClass("hide");
+                        $("#hand3a").removeClass("hide");
+                    });
+                    $("#hand5").click(function () {
+                        location.href="http://www.shechidichan.com/mhproject/shanyuqinghui/invitation4/";
+                    });                   
+
+                }
+            }
+
+            function onoffMusic() {
+                if (document.getElementById("musicon").style.display == 'block') {
+                    musicPlay0.pause();
+                    document.getElementById("musicon").style.display = 'none';
+                    document.getElementById("musicoff").style.display = 'block';
+                } else {
+                    musicPlay0.play();
+                    document.getElementById("musicon").style.display = 'block';
+                    document.getElementById("musicoff").style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>
