@@ -1,0 +1,21 @@
+# Webstorm:
+node_modules/
+build/
+debug/
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# Intellij
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/libraries
+
+
+
+
+*.log
